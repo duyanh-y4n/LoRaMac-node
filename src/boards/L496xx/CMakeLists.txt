@@ -38,26 +38,26 @@ list(APPEND ${PROJECT_NAME}_SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/cmsis/arm-gcc/startup_stm32l496xx.s"
             
     "${CMAKE_CURRENT_SOURCE_DIR}/cmsis/system_stm32l4xx.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc_ex.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_adc.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_adc_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_cortex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_dma.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_dma_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_flash.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_flash_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_gpio.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_i2c.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_i2c_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_pwr.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_pwr_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_rcc.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_rcc_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_rtc.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_rtc_ex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_spi.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_uart.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Src/stm32l4xx_hal_uart_ex.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/EEPROM_Emul/Core/eeprom_emul.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/EEPROM_Emul/Porting/STM32L4/flash_interface.c"
 )
@@ -95,7 +95,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/cmsis
     ${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32
     ${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/cmsis
-    ${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver_L496xx/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/EEPROM_Emul/Core
     ${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/EEPROM_Emul/Porting/STM32L4
     $<TARGET_PROPERTY:board,INTERFACE_INCLUDE_DIRECTORIES>
