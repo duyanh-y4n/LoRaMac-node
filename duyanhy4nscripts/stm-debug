@@ -1,0 +1,8 @@
+#/bin/bash
+tmux new-window "arm-none-eabi-gdb -x ./duyanhy4nscripts/.gdbinit"
+tmux rename-window 'stm-debug'
+tmux splitw -h -p 40 "sleep 1 && telnet localhost 19021"
+#tmux splitw -h -p 40 "sleep 1 "
+tmux splitw -v -p 80 "python ./duyanhy4nscripts/Y4N_SCRIPT_Debug_Server.py"
+#tmux splitw -v -p 50 "cd duyanhy4nscripts && ipython"
+tmux selectp -t 0
