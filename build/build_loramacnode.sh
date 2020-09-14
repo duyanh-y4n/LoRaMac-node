@@ -9,4 +9,4 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCLASSB_ENABLED=ON  -DAPPLICATION="LoR
 #cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCLASSB_ENABLED=ON  -DAPPLICATION="LoRaMac" -DSUB_PROJECT="periodic-uplink-lpp" -DCMAKE_TOOLCHAIN_FILE="cmake/toolchain-arm-none-eabi.cmake" -DBOARD="PressureSensor" -DMBED_RADIO_SHIELD=SX1276MB1LAS ..
 #cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCLASSB_ENABLED=ON  -DAPPLICATION="LoRaMac" -DSUB_PROJECT="classA" -DCMAKE_TOOLCHAIN_FILE="cmake/toolchain-arm-none-eabi.cmake" -DBOARD="PressureSensor" -DMBED_RADIO_SHIELD=SX1276MB1LAS --graphviz=dependency.dot ..
 dot -Tpng -o dependency.png dependency.dot
-make && mv ./compile_commands.json ..
+make -j4 && mv ./compile_commands.json ..
