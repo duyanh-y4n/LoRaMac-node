@@ -15,7 +15,7 @@
 ## License:  Revised BSD License, see LICENSE.TXT file included in the project
 ## Authors:  Johannes Bruder (STACKFORCE), Miguel Luis (Semtech)
 ##
-project(NucleoL476)
+project(L496xx)
 cmake_minimum_required(VERSION 3.6)
 enable_language(ASM)
 
@@ -35,7 +35,8 @@ list(APPEND ${PROJECT_NAME}_SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/uart-board.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/sysIrqHandlers.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/utilities.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/cmsis/arm-gcc/startup_stm32l476xx.s"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmsis/arm-gcc/startup_stm32l496xx.s"
+            
     "${CMAKE_CURRENT_SOURCE_DIR}/cmsis/system_stm32l4xx.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../mcu/stm32/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c"
@@ -81,7 +82,7 @@ endif()
 
 add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 
-target_compile_definitions(${PROJECT_NAME} PUBLIC -DUSE_HAL_DRIVER -DSTM32L476xx -D${MBED_RADIO_SHIELD})
+target_compile_definitions(${PROJECT_NAME} PUBLIC -DUSE_HAL_DRIVER -DSTM32L496xx -D${MBED_RADIO_SHIELD})
 
 # Add define if debbuger support is enabled
 target_compile_definitions(${PROJECT_NAME} PUBLIC $<$<BOOL:${USE_DEBUGGER}>:USE_DEBUGGER>)

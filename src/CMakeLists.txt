@@ -110,7 +110,7 @@ elseif(BOARD STREQUAL NucleoL152)
 
 elseif(BOARD STREQUAL L496xx)
     # Configure toolchain for L496xx
-    set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/boards/L496xx/cmsis/arm-gcc/stm32l476rgtx_flash.ld)
+    set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/boards/L496xx/cmsis/arm-gcc/STM32L496RGTx_FLASH.ld)
     include(stm32l4)
 
     # Build platform specific board implementation
