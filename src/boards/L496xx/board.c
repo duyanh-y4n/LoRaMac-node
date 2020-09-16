@@ -277,7 +277,7 @@ uint32_t BoardGetBatteryVoltage( void )
 
 uint8_t BoardGetBatteryLevel( void )
 {
-    return 0;
+    return 128;
 }
 
 static void BoardUnusedIoInit( void )
