@@ -8,8 +8,10 @@ monitor reset
 monitor halt
 #load build/src/apps/LoRaMac/LoRaMac-classA
 #symbol-file build/src/apps/LoRaMac/LoRaMac-classA
-load build/src/apps/porting_test/porting_test
-symbol-file build/src/apps/porting_test/porting_test
+#load build/src/apps/porting_test/porting_test
+#symbol-file build/src/apps/porting_test/porting_test
+load build/src/apps/LoRaMac/LoRaMac-periodic-uplink-lpp
+symbol-file build/src/apps/LoRaMac/LoRaMac-periodic-uplink-lpp
 
 break main
 

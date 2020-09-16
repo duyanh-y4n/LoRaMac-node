@@ -66,8 +66,15 @@ extern "C"
 
 #define RADIO_ANT_SWITCH                            NC
 
-#define LED_1                                       NC
-#define LED_2                                       NC
+// GPIO
+#define GPIO_0                                      PC_6
+#define GPIO_2                                      PC_8
+#define EN_LORA                                     PA_8
+
+#define LED_1                                       GPIO_0
+#define LED_2                                       GPIO_0
+#define LED_3                                       NC
+#define LED_4                                       GPIO_2
 
 // Debug pins definition.
 #define RADIO_DBG_PIN_TX                            NC

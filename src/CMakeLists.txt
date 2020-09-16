@@ -38,7 +38,7 @@ set(SECURE_ELEMENT SOFT_SE CACHE STRING "Default secure element is SOFT_SE")
 set_property(CACHE SECURE_ELEMENT PROPERTY STRINGS ${SECURE_ELEMENT_LIST})
 
 # Allow switching of Applications
-set(APPLICATION_LIST LoRaMac ping-pong rx-sensi tx-cw )
+set(APPLICATION_LIST LoRaMac ping-pong rx-sensi tx-cw porting_test )
 set(APPLICATION LoRaMac CACHE STRING "Default Application is LoRaMac")
 set_property(CACHE APPLICATION PROPERTY STRINGS ${APPLICATION_LIST})
 
@@ -239,5 +239,9 @@ elseif(APPLICATION STREQUAL rx-sensi)
 elseif(APPLICATION STREQUAL tx-cw)
 
     add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/apps/tx-cw)
+
+elseif(APPLICATION STREQUAL porting_test)
+
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/apps/porting_test)
 
 endif()

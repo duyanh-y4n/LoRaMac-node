@@ -55,6 +55,8 @@
  */
 Gpio_t Led1;
 Gpio_t Led2;
+Gpio_t Led4;
+Gpio_t Lora_en;
 
 /*
  * MCU objects
@@ -152,9 +154,13 @@ void BoardInitMcu( void )
 
         InitFlashMemoryOperations( );
 
+        GpioInit( &Lora_en, EN_LORA, PIN_OUTPUT, PIN_OPEN_DRAIN, PIN_NO_PULL, 1 );
+        GpioWrite(&Lora_en, 0);
         // LEDs
+        GpioInit( &Led1, LED_1, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 1 );
+        GpioInit( &Led4, LED_4, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 1 );
         GpioInit( &Led1, LED_1, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
-        GpioInit( &Led2, LED_2, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
+        GpioInit( &Led4, LED_4, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
 
         SystemClockConfig( );
 
