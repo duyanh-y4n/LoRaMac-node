@@ -67,8 +67,13 @@ extern "C"
 #define RADIO_ANT_SWITCH                            NC
 
 // GPIO
+#ifndef NUCLEO144
 #define GPIO_0                                      PC_6
 #define GPIO_2                                      PC_8
+#else
+#define GPIO_0                                      PC_7
+#define GPIO_2                                      PB_14
+#endif
 #define EN_LORA                                     PA_8
 
 #define LED_1                                       GPIO_0
